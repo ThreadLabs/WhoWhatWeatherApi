@@ -1,0 +1,3 @@
+[submodule "src/ThreadLabs/OpenWeatherMapBundle"]
+	path = src/ThreadLabs/OpenWeatherMapBundle
+	url = https://github.com/ThreadLabs/OpenWeatherMapBundle.git
