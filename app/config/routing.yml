@@ -1,7 +1,3 @@
-thread_labs_open_weather_map:
-    resource: "@ThreadLabsOpenWeatherMapBundle/Resources/config/routing.yml"
-    prefix:   /
-
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
