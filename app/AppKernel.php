@@ -19,7 +19,8 @@ class AppKernel extends Kernel
             new ThreadLabs\OpenWeatherMapBundle\ThreadLabsOpenWeatherMapBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle(),
-            new Nelmio\CorsBundle\NelmioCorsBundle()
+            new Nelmio\CorsBundle\NelmioCorsBundle(),
+            new ThreadLabs\ValueObjectsBundle\ThreadLabsValueObjectsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

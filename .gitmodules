@@ -1,3 +1,6 @@
 [submodule "src/ThreadLabs/OpenWeatherMapBundle"]
 	path = src/ThreadLabs/OpenWeatherMapBundle
 	url = https://github.com/ThreadLabs/OpenWeatherMapBundle.git
+[submodule "src/ThreadLabs/ValueObjectsBundle"]
+	path = src/ThreadLabs/ValueObjectsBundle
+	url = https://github.com/ThreadLabs/ValueObjectsBundle.git
