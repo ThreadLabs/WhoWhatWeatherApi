@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Request\SearchRequest;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -15,9 +16,10 @@ class ApiController extends Controller
      */
     public function searchAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
-        ]);
+        $searchRequest = new SearchRequest($request);
+
+        $report = $this->get('threadlabs.open_weather_map.api')->getWeatherForCoordinates($searchRequest->getLat(), $searchRequest->getLon());
+
+        dump($report);die();
     }
 }
